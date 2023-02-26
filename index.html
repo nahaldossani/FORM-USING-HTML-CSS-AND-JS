@@ -7,11 +7,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Form</title>
 	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
+
+		*{
+			font-family: 'Work Sans', sans-serif;
+		}
+	</style>
 </head>
 
 <body>
 	<div class="m-4 bg-sky-200 p-4 rounded-lg">
-		<p class="text-xl font-semibold text-black m-2">Your Assessment</p>
+		<p class="text-4xl font-bold text-black m-2">Your Assessment</p>
 		<div id="formQuestion">
 			<form action="" class="flex flex-row items-center flex-wrap">
 				<div class="flex flex-col justify-start m-2">
@@ -61,42 +69,12 @@
 			</form>
 		</div>
 
-	<!-- <div id="questions" class="mx-5 my-2">
-		<form action="" class="flex flex-row flex-wrap">
-			<div class="m-6 flex-col flex">
-				<label for="" required>When are you planning on visiting ${destination.value}?</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2">
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>How long will you be in ${destination.value} for?</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2">
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>How many people are accompanying you?</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2">
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="">Do you have accommodation?</label>
-				<div class="m-2">
-					<input type="radio" id="yes-accomodation" name="accommodation" value="Yes">
-					<label for="Yes">Yes</label><br>
-					<input type="radio" id="no-accomodation" name="accommodation" value="No">
-					<label for="No">No</label><br>
-				</div>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="">Have you arranged flights?</label>
-				<div class="m-2">
-					<input type="radio" id="html" name="flights" value="Yes">
-					<label for="Yes">Yes</label><br>
-					<input type="radio" id="css" name="flights" value="No">
-					<label for="No">No</label><br>
-				</div>
-			</div>
-		</form>
-	</div> -->
-	<button id="submit-next" onclick="nextOrSubmitBtn()"
-		class="bg-blue-600 py-3 px-6 rounded-lg text-white uppercase mx-2 my-4 hover:bg-blue-800">Next</button>
+		<!-- <div class="flex flex-col items-center">
+			<i class="uil uil-check-circle text-9xl"></i>
+			<div class="text-2xl font-bold text-black">Thank you for submitting the form. Your response has been recorded.</div>
+		</div> -->
+		<button id="submit-next" onclick="nextOrSubmitBtn()"
+			class="bg-blue-600 py-3 px-6 rounded-lg text-white uppercase mx-2 my-4 hover:bg-blue-800">Next</button>
 	</div>
 </body>
 <script src="index.js"></script>
