@@ -557,19 +557,19 @@ function nextOrSubmitBtn() {
 			<div class="m-6 flex-col flex">
 				<label>Have you registered this business?</label>
 				<div class="radio">
-					<label><input type="radio" name="Question16" value="Yes">Yes</label>
+					<label><input type="radio" name="Question17" value="Yes">Yes</label>
 				</div>
 				<div class="radio">
-					<label><input type="radio" name="Question16" value="No" checked>No</label>
+					<label><input type="radio" name="Question17" value="No" checked>No</label>
 				</div>
 			</div>
 			<div class="m-6 flex-col flex">
 				<label>Do you have a business plan for this business?</label>
 				<div class="radio">
-					<label><input type="radio" name="Question16" value="Yes">Yes</label>
+					<label><input type="radio" name="Question18" value="Yes">Yes</label>
 				</div>
 				<div class="radio">
-					<label><input type="radio" name="Question16" value="No" checked>No</label>
+					<label><input type="radio" name="Question18" value="No" checked>No</label>
 				</div>
 			</div>
 		</form>
