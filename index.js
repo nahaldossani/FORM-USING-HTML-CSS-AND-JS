@@ -3,73 +3,6 @@ const whySelection = document.querySelector("#whySelection");
 const destination = document.querySelector("#destination");
 const currentLocation = document.querySelector("#current-location");
 
-// nextBtn.addEventListener("click", () => {
-	// if (whySelection.value === "") {
-	// 	alert("Please select a reason");
-	// 	return;
-	// }
-
-	// if (whySelection.value === "WORK") {
-	// 	window.location.href = "http://127.0.0.1:49351/workForm.html";
-	// 	return;
-	// }
-
-	// if (whySelection.value === "WORK") {
-	// 	window.location.href = "http://127.0.0.1:49351/workForm.html";
-	// 	return;
-	// }
-	
-	// if (whySelection.value === "WORK") {
-	// 	window.location.href = "http://127.0.0.1:49351/workForm.html";
-	// 	return;
-	// }
-
-	// if (whySelection.value === "WORK") {
-	// 	window.location.href = "http://127.0.0.1:49351/workForm.html";
-	// 	return;
-	// }
-
-	// if (whySelection.value === "WORK") {
-	// 	window.location.href = "http://127.0.0.1:49351/workForm.html";
-	// 	return;
-	// }
-
-	// if (whySelection.value === "WORK") {
-	// 	window.location.href = "http://127.0.0.1:49351/workForm.html";
-	// 	return;
-	// }
-	
-	// if (whySelection.value === "WORK") {
-	// 	window.location.href = "http://127.0.0.1:49351/workForm.html";
-	// 	return;
-	// }
-
-	// if (whySelection.value === "WORK") {
-	// 	window.location.href = "http://127.0.0.1:49351/workForm.html";
-	// 	return;
-	// }
-
-	// if (whySelection.value === "WORK") {
-	// 	window.location.href = "http://127.0.0.1:49351/workForm.html";
-	// 	return;
-	// }
-
-	// if (whySelection.value === "WORK") {
-	// 	window.location.href = "http://127.0.0.1:49351/workForm.html";
-	// 	return;
-	// }
-
-	// if (whySelection.value === "WORK") {
-	// 	window.location.href = "http://127.0.0.1:49351/workForm.html";
-	// 	return;
-	// }
-
-	// if (whySelection.value === "WORK") {
-	// 	window.location.href = "http://127.0.0.1:49351/workForm.html";
-	// 	return;
-	// }
-// });
-
 const formQuestion = document.querySelector("#formQuestion");
 
 let step = 1;
@@ -133,7 +66,7 @@ function nextOrSubmitBtn() {
 	}
 
 	// Page 2
-	if (step === 2 && whySelection.value === "visit-tourism") {
+	if (step === 2) {
 		formQuestion.innerHTML = `<div id="questions" class="my-2">
 		<form action="" class="flex flex-row flex-wrap">
 			<div class="m-6 flex-col flex">
@@ -180,7 +113,7 @@ function nextOrSubmitBtn() {
 	}
 
 	// Page 3
-	if (step === 3 && whySelection.value === "visit-tourism") {
+	if (step === 3) {
 		formQuestion.innerHTML = `<div id="questions" class="my-2">
 		<form action="" class="flex flex-row flex-wrap">
 			<!-- <div class="m-6 flex-col flex">
@@ -253,80 +186,6 @@ function nextOrSubmitBtn() {
 		step = 2;
 		return;
 	}
-
-	// Page 2
-	if (step === 2 && whySelection.value === "visit-business") {
-		formQuestion.innerHTML = `<div id="questions" class="my-2">
-		<form action="" class="flex flex-row flex-wrap">
-			<div class="m-6 flex-col flex">
-				<label for="">First Name</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm" required>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Surname</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm" required>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Email Address</label>
-				<input type="email" class="border-2 border-gray-400 rounded-sm" required>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>Dialing Code</label>
-				<select name="dialing-code" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="SA">South Africa (+27)</option>
-					<option value="UAE">UAE (+971)</option>
-				</select>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Mobile</label>
-				<input type="tel" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>Nationality</label>
-				<select name="nationality" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="">-- please select --</option>
-					<option value="SA">South African</option>
-				</select>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>If your assessment is positive, would you like to discuss the visa process over a free ZOOM call with your consultant?</label>
-				<select name="zoom-call" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="yes">Yes</option>
-					<option value="no">No</option>
-				</select>
-			</div>
-		</form>
-	</div>`;
-		step = 3;
-		return;
-	}
-
-	// Page 3
-	if (step === 3 && whySelection.value === "visit-business") {
-		formQuestion.innerHTML = `<div id="questions" class="my-2">
-		<form action="" class="flex flex-row flex-wrap">
-			<!-- <div class="m-6 flex-col flex">
-				<label for="">First Name</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm" required>
-			</div> -->
-			<div class="m-6 flex flex-col">
-				<label for="" required>Would you like us to expose your profile to international employers for possible job opportunities?</label>
-				<select name="zoom-call" id="" class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="yes">Yes</option>
-					<option value="no">No</option>
-				</select>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="">Is there any information you wish to add to further explain your situation?</label>
-				<textarea name="" id="" cols="30" rows="10"></textarea>
-			</div>
-		</form>
-	</div>`;
-		document.querySelector("#submit-next").innerText = `Submit`
-		step = 4;
-		return;
-	}
-
 
 
 
@@ -451,79 +310,6 @@ function nextOrSubmitBtn() {
 		return;
 	}
 
-	// Page 2
-	if (step === 2 && whySelection.value === "work") {
-		formQuestion.innerHTML = `<div id="questions" class="my-2">
-		<form action="" class="flex flex-row flex-wrap">
-			<div class="m-6 flex-col flex">
-				<label for="">First Name</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Surname</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Email Address</label>
-				<input type="email" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>Dialing Code</label>
-				<select name="dialing-code" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="SA">South Africa (+27)</option>
-					<option value="UAE">UAE (+971)</option>
-				</select>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Mobile</label>
-				<input type="tel" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>Nationality</label>
-				<select name="nationality" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="">-- please select --</option>
-					<option value="SA">South African</option>
-				</select>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>If your assessment is positive, would you like to discuss the visa process over a free ZOOM call with your consultant?</label>
-				<select name="zoom-call" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="yes">Yes</option>
-					<option value="no">No</option>
-				</select>
-			</div>
-		</form>
-	</div>`;
-		step = 3;
-		return;
-	}
-
-	// Page 3
-	if (step === 3 && whySelection.value === "work") {
-		formQuestion.innerHTML = `<div id="questions" class="my-2">
-		<form action="" class="flex flex-row flex-wrap">
-			<!-- <div class="m-6 flex-col flex">
-				<label for="">First Name</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div> -->
-			<div class="m-6 flex flex-col">
-				<label for="" required>Would you like us to expose your profile to international employers for possible job opportunities?</label>
-				<select name="zoom-call" id="" class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="yes">Yes</option>
-					<option value="no">No</option>
-				</select>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="">Is there any information you wish to add to further explain your situation?</label>
-				<textarea name="" id="" cols="30" rows="10"></textarea>
-			</div>
-		</form>
-	</div>`;
-		document.querySelector("#submit-next").innerText = `Submit`
-		step = 4;
-		return;
-	}
-
 
 
 
@@ -578,78 +364,7 @@ function nextOrSubmitBtn() {
 		return;
 	}
 
-	// Page 2
-	if (step === 2 && whySelection.value === "business") {
-		formQuestion.innerHTML = `<div id="questions" class="my-2">
-		<form action="" class="flex flex-row flex-wrap">
-			<div class="m-6 flex-col flex">
-				<label for="">First Name</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Surname</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Email Address</label>
-				<input type="email" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>Dialing Code</label>
-				<select name="dialing-code" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="SA">South Africa (+27)</option>
-					<option value="UAE">UAE (+971)</option>
-				</select>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Mobile</label>
-				<input type="tel" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>Nationality</label>
-				<select name="nationality" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="">-- please select --</option>
-					<option value="SA">South African</option>
-				</select>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>If your assessment is positive, would you like to discuss the visa process over a free ZOOM call with your consultant?</label>
-				<select name="zoom-call" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="yes">Yes</option>
-					<option value="no">No</option>
-				</select>
-			</div>
-		</form>
-	</div>`;
-		step = 3;
-		return;
-	}
-
-	// Page 3
-	if (step === 3 && whySelection.value === "business") {
-		formQuestion.innerHTML = `<div id="questions" class="my-2">
-		<form action="" class="flex flex-row flex-wrap">
-			<!-- <div class="m-6 flex-col flex">
-				<label for="">First Name</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div> -->
-			<div class="m-6 flex flex-col">
-				<label for="" required>Would you like us to expose your profile to international employers for possible job opportunities?</label>
-				<select name="zoom-call" id="" class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="yes">Yes</option>
-					<option value="no">No</option>
-				</select>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="">Is there any information you wish to add to further explain your situation?</label>
-				<textarea name="" id="" cols="30" rows="10"></textarea>
-			</div>
-		</form>
-	</div>`;
-		document.querySelector("#submit-next").innerText = `Submit`
-		step = 4;
-		return;
-	}
+	
 
 
 
@@ -679,79 +394,6 @@ function nextOrSubmitBtn() {
 		</form>
 	</div>`;
 		step = 2;
-		return;
-	}
-
-	// Page 2
-	if (step === 2 && whySelection.value === "invest") {
-		formQuestion.innerHTML = `<div id="questions" class="my-2">
-		<form action="" class="flex flex-row flex-wrap">
-			<div class="m-6 flex-col flex">
-				<label for="">First Name</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Surname</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Email Address</label>
-				<input type="email" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>Dialing Code</label>
-				<select name="dialing-code" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="SA">South Africa (+27)</option>
-					<option value="UAE">UAE (+971)</option>
-				</select>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Mobile</label>
-				<input type="tel" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>Nationality</label>
-				<select name="nationality" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="">-- please select --</option>
-					<option value="SA">South African</option>
-				</select>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>If your assessment is positive, would you like to discuss the visa process over a free ZOOM call with your consultant?</label>
-				<select name="zoom-call" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="yes">Yes</option>
-					<option value="no">No</option>
-				</select>
-			</div>
-		</form>
-	</div>`;
-		step = 3;
-		return;
-	}
-
-	// Page 3
-	if (step === 3 && whySelection.value === "invest") {
-		formQuestion.innerHTML = `<div id="questions" class="my-2">
-		<form action="" class="flex flex-row flex-wrap">
-			<!-- <div class="m-6 flex-col flex">
-				<label for="">First Name</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div> -->
-			<div class="m-6 flex flex-col">
-				<label for="" required>Would you like us to expose your profile to international employers for possible job opportunities?</label>
-				<select name="zoom-call" id="" class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="yes">Yes</option>
-					<option value="no">No</option>
-				</select>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="">Is there any information you wish to add to further explain your situation?</label>
-				<textarea name="" id="" cols="30" rows="10"></textarea>
-			</div>
-		</form>
-	</div>`;
-		document.querySelector("#submit-next").innerText = `Submit`
-		step = 4;
 		return;
 	}
 
@@ -881,79 +523,7 @@ function nextOrSubmitBtn() {
 		return;
 	}
 
-	// Page 2
-	if (step === 2 && whySelection.value === "study") {
-		formQuestion.innerHTML = `<div id="questions" class="my-2">
-		<form action="" class="flex flex-row flex-wrap">
-			<div class="m-6 flex-col flex">
-				<label for="">First Name</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Surname</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Email Address</label>
-				<input type="email" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>Dialing Code</label>
-				<select name="dialing-code" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="SA">South Africa (+27)</option>
-					<option value="UAE">UAE (+971)</option>
-				</select>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Mobile</label>
-				<input type="tel" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>Nationality</label>
-				<select name="nationality" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="">-- please select --</option>
-					<option value="SA">South African</option>
-				</select>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>If your assessment is positive, would you like to discuss the visa process over a free ZOOM call with your consultant?</label>
-				<select name="zoom-call" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="yes">Yes</option>
-					<option value="no">No</option>
-				</select>
-			</div>
-		</form>
-	</div>`;
-		step = 3;
-		return;
-	}
-
-	// Page 3
-	if (step === 3 && whySelection.value === "study") {
-		formQuestion.innerHTML = `<div id="questions" class="my-2">
-		<form action="" class="flex flex-row flex-wrap">
-			<!-- <div class="m-6 flex-col flex">
-				<label for="">First Name</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div> -->
-			<div class="m-6 flex flex-col">
-				<label for="" required>Would you like us to expose your profile to international employers for possible job opportunities?</label>
-				<select name="zoom-call" id="" class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="yes">Yes</option>
-					<option value="no">No</option>
-				</select>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="">Is there any information you wish to add to further explain your situation?</label>
-				<textarea name="" id="" cols="30" rows="10"></textarea>
-			</div>
-		</form>
-	</div>`;
-		document.querySelector("#submit-next").innerText = `Submit`
-		step = 4;
-		return;
-	}
-
+	
 
 
 
@@ -995,79 +565,7 @@ function nextOrSubmitBtn() {
 		return;
 	}
 
-	// Page 2
-	if (step === 2 && whySelection.value === "join-family") {
-		formQuestion.innerHTML = `<div id="questions" class="my-2">
-		<form action="" class="flex flex-row flex-wrap">
-			<div class="m-6 flex-col flex">
-				<label for="">First Name</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Surname</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Email Address</label>
-				<input type="email" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>Dialing Code</label>
-				<select name="dialing-code" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="SA">South Africa (+27)</option>
-					<option value="UAE">UAE (+971)</option>
-				</select>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Mobile</label>
-				<input type="tel" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>Nationality</label>
-				<select name="nationality" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="">-- please select --</option>
-					<option value="SA">South African</option>
-				</select>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>If your assessment is positive, would you like to discuss the visa process over a free ZOOM call with your consultant?</label>
-				<select name="zoom-call" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="yes">Yes</option>
-					<option value="no">No</option>
-				</select>
-			</div>
-		</form>
-	</div>`;
-		step = 3;
-		return;
-	}
-
-	// Page 3
-	if (step === 3 && whySelection.value === "join-family") {
-		formQuestion.innerHTML = `<div id="questions" class="my-2">
-		<form action="" class="flex flex-row flex-wrap">
-			<!-- <div class="m-6 flex-col flex">
-				<label for="">First Name</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div> -->
-			<div class="m-6 flex flex-col">
-				<label for="" required>Would you like us to expose your profile to international employers for possible job opportunities?</label>
-				<select name="zoom-call" id="" class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="yes">Yes</option>
-					<option value="no">No</option>
-				</select>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="">Is there any information you wish to add to further explain your situation?</label>
-				<textarea name="" id="" cols="30" rows="10"></textarea>
-			</div>
-		</form>
-	</div>`;
-		document.querySelector("#submit-next").innerText = `Submit`
-		step = 4;
-		return;
-	}
-
+	
 
 
 
@@ -1109,79 +607,7 @@ function nextOrSubmitBtn() {
 		return;
 	}
 
-	// Page 2
-	if (step === 2 && whySelection.value === "join-life-partner") {
-		formQuestion.innerHTML = `<div id="questions" class="my-2">
-		<form action="" class="flex flex-row flex-wrap">
-			<div class="m-6 flex-col flex">
-				<label for="">First Name</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Surname</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Email Address</label>
-				<input type="email" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>Dialing Code</label>
-				<select name="dialing-code" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="SA">South Africa (+27)</option>
-					<option value="UAE">UAE (+971)</option>
-				</select>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Mobile</label>
-				<input type="tel" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>Nationality</label>
-				<select name="nationality" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="">-- please select --</option>
-					<option value="SA">South African</option>
-				</select>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>If your assessment is positive, would you like to discuss the visa process over a free ZOOM call with your consultant?</label>
-				<select name="zoom-call" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="yes">Yes</option>
-					<option value="no">No</option>
-				</select>
-			</div>
-		</form>
-	</div>`;
-		step = 3;
-		return;
-	}
-
-	// Page 3
-	if (step === 3 && whySelection.value === "join-life-partner") {
-		formQuestion.innerHTML = `<div id="questions" class="my-2">
-		<form action="" class="flex flex-row flex-wrap">
-			<!-- <div class="m-6 flex-col flex">
-				<label for="">First Name</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div> -->
-			<div class="m-6 flex flex-col">
-				<label for="" required>Would you like us to expose your profile to international employers for possible job opportunities?</label>
-				<select name="zoom-call" id="" class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="yes">Yes</option>
-					<option value="no">No</option>
-				</select>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="">Is there any information you wish to add to further explain your situation?</label>
-				<textarea name="" id="" cols="30" rows="10"></textarea>
-			</div>
-		</form>
-	</div>`;
-		document.querySelector("#submit-next").innerText = `Submit`
-		step = 4;
-		return;
-	}
-
+	
 
 
 
@@ -1227,79 +653,7 @@ function nextOrSubmitBtn() {
 		return;
 	}
 
-	// Page 2
-	if (step === 2 && whySelection.value === "retire") {
-		formQuestion.innerHTML = `<div id="questions" class="my-2">
-		<form action="" class="flex flex-row flex-wrap">
-			<div class="m-6 flex-col flex">
-				<label for="">First Name</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Surname</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Email Address</label>
-				<input type="email" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>Dialing Code</label>
-				<select name="dialing-code" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="SA">South Africa (+27)</option>
-					<option value="UAE">UAE (+971)</option>
-				</select>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Mobile</label>
-				<input type="tel" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>Nationality</label>
-				<select name="nationality" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="">-- please select --</option>
-					<option value="SA">South African</option>
-				</select>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>If your assessment is positive, would you like to discuss the visa process over a free ZOOM call with your consultant?</label>
-				<select name="zoom-call" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="yes">Yes</option>
-					<option value="no">No</option>
-				</select>
-			</div>
-		</form>
-	</div>`;
-		step = 3;
-		return;
-	}
-
-	// Page 3
-	if (step === 3 && whySelection.value === "retire") {
-		formQuestion.innerHTML = `<div id="questions" class="my-2">
-		<form action="" class="flex flex-row flex-wrap">
-			<!-- <div class="m-6 flex-col flex">
-				<label for="">First Name</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div> -->
-			<div class="m-6 flex flex-col">
-				<label for="" required>Would you like us to expose your profile to international employers for possible job opportunities?</label>
-				<select name="zoom-call" id="" class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="yes">Yes</option>
-					<option value="no">No</option>
-				</select>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="">Is there any information you wish to add to further explain your situation?</label>
-				<textarea name="" id="" cols="30" rows="10"></textarea>
-			</div>
-		</form>
-	</div>`;
-		document.querySelector("#submit-next").innerText = `Submit`
-		step = 4;
-		return;
-	}
-
+	
 
 
 
@@ -1345,78 +699,7 @@ function nextOrSubmitBtn() {
 		return;
 	}
 
-	// Page 2
-	if (step === 2 && whySelection.value === "volunteer") {
-		formQuestion.innerHTML = `<div id="questions" class="my-2">
-		<form action="" class="flex flex-row flex-wrap">
-			<div class="m-6 flex-col flex">
-				<label for="">First Name</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Surname</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Email Address</label>
-				<input type="email" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>Dialing Code</label>
-				<select name="dialing-code" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="SA">South Africa (+27)</option>
-					<option value="UAE">UAE (+971)</option>
-				</select>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Mobile</label>
-				<input type="tel" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>Nationality</label>
-				<select name="nationality" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="">-- please select --</option>
-					<option value="SA">South African</option>
-				</select>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>If your assessment is positive, would you like to discuss the visa process over a free ZOOM call with your consultant?</label>
-				<select name="zoom-call" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="yes">Yes</option>
-					<option value="no">No</option>
-				</select>
-			</div>
-		</form>
-	</div>`;
-		step = 3;
-		return;
-	}
-
-	// Page 3
-	if (step === 3 && whySelection.value === "volunteer") {
-		formQuestion.innerHTML = `<div id="questions" class="my-2">
-		<form action="" class="flex flex-row flex-wrap">
-			<!-- <div class="m-6 flex-col flex">
-				<label for="">First Name</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div> -->
-			<div class="m-6 flex flex-col">
-				<label for="" required>Would you like us to expose your profile to international employers for possible job opportunities?</label>
-				<select name="zoom-call" id="" class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="yes">Yes</option>
-					<option value="no">No</option>
-				</select>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="">Is there any information you wish to add to further explain your situation?</label>
-				<textarea name="" id="" cols="30" rows="10"></textarea>
-			</div>
-		</form>
-	</div>`;
-		document.querySelector("#submit-next").innerText = `Submit`
-		step = 4;
-		return;
-	}
+	
 
 
 
@@ -1454,78 +737,7 @@ function nextOrSubmitBtn() {
 		return;
 	}
 
-	// Page 2
-	if (step === 2 && whySelection.value === "internship") {
-		formQuestion.innerHTML = `<div id="questions" class="my-2">
-		<form action="" class="flex flex-row flex-wrap">
-			<div class="m-6 flex-col flex">
-				<label for="">First Name</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Surname</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Email Address</label>
-				<input type="email" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>Dialing Code</label>
-				<select name="dialing-code" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="SA">South Africa (+27)</option>
-					<option value="UAE">UAE (+971)</option>
-				</select>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Mobile</label>
-				<input type="tel" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>Nationality</label>
-				<select name="nationality" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="">-- please select --</option>
-					<option value="SA">South African</option>
-				</select>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>If your assessment is positive, would you like to discuss the visa process over a free ZOOM call with your consultant?</label>
-				<select name="zoom-call" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="yes">Yes</option>
-					<option value="no">No</option>
-				</select>
-			</div>
-		</form>
-	</div>`;
-		step = 3;
-		return;
-	}
-
-	// Page 3
-	if (step === 3 && whySelection.value === "internship") {
-		formQuestion.innerHTML = `<div id="questions" class="my-2">
-		<form action="" class="flex flex-row flex-wrap">
-			<!-- <div class="m-6 flex-col flex">
-				<label for="">First Name</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div> -->
-			<div class="m-6 flex flex-col">
-				<label for="" required>Would you like us to expose your profile to international employers for possible job opportunities?</label>
-				<select name="zoom-call" id="" class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="yes">Yes</option>
-					<option value="no">No</option>
-				</select>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="">Is there any information you wish to add to further explain your situation?</label>
-				<textarea name="" id="" cols="30" rows="10"></textarea>
-			</div>
-		</form>
-	</div>`;
-		document.querySelector("#submit-next").innerText = `Submit`
-		step = 4;
-		return;
-	}
+	
 
 
 
@@ -1550,79 +762,7 @@ function nextOrSubmitBtn() {
 		return;
 	}
 
-	// Page 2
-	if (step === 2 && whySelection.value === "other") {
-		formQuestion.innerHTML = `<div id="questions" class="my-2">
-		<form action="" class="flex flex-row flex-wrap">
-			<div class="m-6 flex-col flex">
-				<label for="">First Name</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Surname</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Email Address</label>
-				<input type="email" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>Dialing Code</label>
-				<select name="dialing-code" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="SA">South Africa (+27)</option>
-					<option value="UAE">UAE (+971)</option>
-				</select>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="" required>Mobile</label>
-				<input type="tel" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>Nationality</label>
-				<select name="nationality" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="">-- please select --</option>
-					<option value="SA">South African</option>
-				</select>
-			</div>
-			<div class="m-6 flex flex-col">
-				<label for="" required>If your assessment is positive, would you like to discuss the visa process over a free ZOOM call with your consultant?</label>
-				<select name="zoom-call" id="" required class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="yes">Yes</option>
-					<option value="no">No</option>
-				</select>
-			</div>
-		</form>
-	</div>`;
-		step = 3;
-		return;
-	}
-
-	// Page 3
-	if (step === 3 && whySelection.value === "other") {
-		formQuestion.innerHTML = `<div id="questions" class="my-2">
-		<form action="" class="flex flex-row flex-wrap">
-			<!-- <div class="m-6 flex-col flex">
-				<label for="">First Name</label>
-				<input type="text" class="border-2 border-gray-400 rounded-sm m-2" required>
-			</div> -->
-			<div class="m-6 flex flex-col">
-				<label for="" required>Would you like us to expose your profile to international employers for possible job opportunities?</label>
-				<select name="zoom-call" id="" class="border-2 border-gray-400 p-2 max-w-sm">
-					<option value="yes">Yes</option>
-					<option value="no">No</option>
-				</select>
-			</div>
-			<div class="m-6 flex-col flex">
-				<label for="">Is there any information you wish to add to further explain your situation?</label>
-				<textarea name="" id="" cols="30" rows="10"></textarea>
-			</div>
-		</form>
-	</div>`;
-		document.querySelector("#submit-next").innerText = `Submit`
-		step = 4;
-		return;
-	}
-
+	
 
 
 
