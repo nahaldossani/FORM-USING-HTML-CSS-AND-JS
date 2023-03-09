@@ -780,5 +780,6 @@ function nextOrSubmitBtn() {
 		<i class="uil uil-check-circle text-9xl"></i>
 		<div class="text-2xl font-bold text-black">Thank you for submitting the form. Your response has been recorded.</div>
 	</div>`
+	document.querySelector("#submit-next").remove();
 	}
 }
